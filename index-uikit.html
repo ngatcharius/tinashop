@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" /></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TinaShopping - La chasseuse de bon plan</title>
+    
+    <!-- UIKit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
+    
+    <!-- Custom CSS with new palette -->
+    <link rel="stylesheet" href="styles-uikit.css" />
+  </head>
+  <body></body>
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" uk-tooltip="Mode sombre/clair" id="darkModeToggle">
+      🌙
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="uk-container">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar></nav>
+          <div class="uk-navbar-left">
+            <div class="logo-section">
+              <div class="header-images-stack">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=80&h=80&fit=crop&crop=center" 
+                     alt="Shopping" class="header-image-stack uk-border-circle" style="transform: translateX(-5px) translateY(-3px); z-index: 3;">
+                <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=80&h=80&fit=crop&crop=center" 
+                     alt="Mode" class="header-image-stack uk-border-circle" style="transform: translateX(-10px) translateY(2px); z-index: 2;">
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=80&h=80&fit=crop&crop=center" 
+                     alt="Accessoires" class="header-image-stack uk-border-circle" style="transform: translateX(-15px) translateY(-2px); z-index: 1;">
+              </div>
+              <div class="logo-text">TinaShopping</div>
+            </div>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li><a href="#apropos" class="uk-text-uppercase" style="font-weight: 600;">À propos</a></li>
+              <li><a href="#processus" class="uk-text-uppercase" style="font-weight: 600;">Processus</a></li>
+              <li><a href="#categories" class="uk-text-uppercase" style="font-weight: 600;">Catégories</a></li>
+              <li><a href="#ventes" class="uk-text-uppercase" style="font-weight: 600;">Ventes privées</a></li>
+              <li><a href="#contact" class="uk-text-uppercase" style="font-weight: 600;">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section uk-padding-large" id="apropos">
+      <div class="uk-container">
+        <div class="uk-grid-large" uk-grid>
+          <</div>div class="uk-width-2-3@m uk-text-center uk-text-left@s">
+            <h1 class="uk-heading-large uk-margin-medium-bottom" 
+                style="background: linear-gradient(135deg, #FF6B8A, #FFB366); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+              La chasseuse de bons plans
+            </h1>
+            <p class="uk-text-lead uk-margin-medium-bottom" style="color: var(--text-secondary);">
+              Coucou, c'est Tina ! 🔥 Je suis ta chasseuse de bons plans dédiée. 
+              Je parcours les boutiques et déniche pour toi les meilleures affaires 
+              en vêtements, chaussures et bijoux. Mes ventes privées ultra-exclusives 
+              te permettent de découvrir mes trouvailles à des prix fous !
+            </p>
+            <button class="uk-button uk-button-primary uk-button-large uk-border-rounded" 
+                    style="background: linear-gradient(135deg, #FF6B8A, #FFB366); box-shadow: 0 8px 32px rgba(255, 107, 138, 0.3); font-weight: 600;">
+             

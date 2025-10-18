@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TinaShopping - La chasseuse de bon plan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-with-images">
+            <div class="header-images-stack">
+              <div
+                class="header-image"
+                style="--rotation: -8deg; --offset-x: -10px; --offset-y: 5px"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=120&fit=crop"
+                  alt="Image 1"
+                />
+              </div>
+              <div
+                class="header-image"
+                style="--rotation: 4deg; --offset-x: 5px; --offset-y: -8px"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=150&h=120&fit=crop"
+                  alt="Image 2"
+                />
+              </div>
+              <div
+                class="header-image"
+                style="--rotation: -5deg; --offset-x: 15px; --offset-y: 10px"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=150&h=120&fit=crop"
+                  alt="Image 3"
+                />
+              </div>
+            </div>
+            <h1 class="logo">TinaShopping.com</h1>
+          </div>
+          <nav class="nav">
+            <a href="#apropos">À propos</a>
+            <a href="#processus">Mon processus</a>
+            <a href="#categories">Mes Catégories</a>
+            <a href="#ventes">Ventes privées</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="apropos">
+      <div class="container">
+        <div class="hero-content">
+          <div class="cards-carousel">
+            <div class="cards-container">
+              <div class="card-item active" style="--index: 0">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
+                  alt="Shopping femme"
+                />
+              </div>
+              <div class="card-item" style="--index: 1">
+                <img
+                  src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=300&fit=crop"
+                  alt="Mode femme"
+                />
+              </div>
+              <div class="card-item" style="--index: 2">
+                <img
+                  src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=300&fit=crop"
+                  alt="Accessoires"
+                />
+              </div>
+              <div class="card-item" style="--index: 3">
+                <img
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=400&h=300&fit=crop"
+                  alt="Chaussures"
+                />
+              </div>
+              <div class="card-item" style="--index: 4">
+                <img
+                  src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=300&fit=crop"
+                  alt="Bijoux"
+                />
+              </div>
+            </div>
+            <button class="carousel-btn prev" id="prevBtn">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+            <button class="carousel-btn next" id="nextBtn">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hero-text">
+            <h2>La chasseuse de bon plan</h2>
+            <p>
+              Je suis Tina, et pour vous, j'accompagne les magasins de vêtements
+              et de chaussures et de bijoux à la recherche des bons plans. Et
+              quand c'est ici l'organise les ventes privées pour vous en faire
+              profiter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Processus Section -->
+    <section class="processus" id="processus">
+      <div class="container">
+        <h2>Mon processus</h2>
+        <div class="processus-cards">
+          <div class="card">
+            <div class="card-icon search">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </div>
+            <h3>1. Identifier les bons articles</h3>
+            <p>
+              Je déniche les perles rares et les meilleures offres d'articles de
+              qualité.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon bag">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 4V3a1 1 0 011-1h8a1 1 0 011 1v1h4a2 2 0 012 2v14a2 2 0 01-2 2H3a2 2 0 01-2-2V6a2 2 0 012-2h4zm0 2H3v14h18V6h-4v2h-2V6H9v2H7V6z"
+                />
+              </svg>
+            </div>
+            <h3>2. Collecter et stocker en lieu sûr</h3>
+            <p>
+              Je rassemble ses articles et la cloisé et stockez précieusement
+              pour vous.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon organize">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 4V3a1 1 0 011-1h8a1 1 0 011 1v1h4a2 2 0 012 2v14a2 2 0 01-2 2H3a2 2 0 01-2-2V6a2 2 0 012-2h4zm0 2H3v14h18V6h-4v2h-2V6H9v2H7V6z"
+                />
+              </svg>
+            </div>
+            <h3>3. Organiser la vente privée</h3>
+            <p>
+              Je mets en place un événement exclusif pour vous présenter mes
+              trouvailles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+      <div class="container">
+        <h2>Mes Catégories</h2>
+        <div class="categories-grid">
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1591047990872-f62c3add3b73?w=300&h=250&fit=crop"
+              alt="Habits Hommes"
+            />
+            <h3>Habits Hommes</h3>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=300&h=250&fit=crop"
+              alt="Chaussures Femmes"
+            />
+            <h3>Chaussures Femmes</h3>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=300&h=250&fit=crop"
+              alt="Bijoux"
+            />
+            <h3>Bijoux</h3>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1519689373023-dd07bcc47b1a?w=300&h=250&fit=crop"
+              alt="Habits Enfant"
+            />
+            <h3>Habits Enfant</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ventes Privées Section -->
+    <section class="ventes-privees" id="ventes">
+      <div class="container">
+        <h2>Prochaines ventes privées</h2>
+        <div class="ventes-grid">
+          <div class="vente-card">
+            <h3>Vente Privé d'Automne</h3>
+            <div class="vente-info">
+              <span class="location">📍 Paris Ième</span>
+              <span class="date">📅 15 Octobre 2024</span>
+              <span class="time">⏰ 10:00 - 18:00</span>
+            </div>
+          </div>
+          <div class="vente-card">
+            <h3>Vente Privé de Noël</h3>
+            <div class="vente-info">
+              <span class="location">📍 Lyon Centre</span>
+              <span class="date">📅 10 Décembre 2024</span>
+              <span class="time">⏰ 10:00 - 20:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact & Réseaux Sociaux</h2>
+        <div class="contact-content">
+          <div class="contact-form">
+            <h3>Envoyez-moi un message</h3>
+            <form>
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+          </div>
+          <div class="social-networks">
+            <h3>Retrouvez-moi sur les réseaux</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Instagram</a>
+              <a href="#" class="social-link">TikTok</a>
+              <a href="#" class="social-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 TinaShopping.com. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="carousel.js"></script>
+  </body>
+</html>
