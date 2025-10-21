@@ -1,14 +1,4 @@
 #-------------------------
-# Projects Files
-#-------------------------
-public/docs/*
-!public/docs/index.html
-
-public/receipts/*
-!public/receipts/index.html
-
-
-#-------------------------
 # Operating Specific Junk Files
 #-------------------------
 

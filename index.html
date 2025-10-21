@@ -1,292 +1,295 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TinaShopping - La chasseuse de bon plan</title>
-    <link rel="stylesheet" href="css/uikit.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <div class="header-content">
-          <div class="logo-with-images">
-            <div class="header-images-stack">
-              <div
-                class="header-image"
-                style="--rotation: -8deg; --offset-x: -10px; --offset-y: 5px"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=120&fit=crop"
-                  alt="Image 1"
-                />
-              </div>
-              <div
-                class="header-image"
-                style="--rotation: 4deg; --offset-x: 5px; --offset-y: -8px"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=150&h=120&fit=crop"
-                  alt="Image 2"
-                />
-              </div>
-              <div
-                class="header-image"
-                style="--rotation: -5deg; --offset-x: 15px; --offset-y: 10px"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=150&h=120&fit=crop"
-                  alt="Image 3"
-                />
-              </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TinaShopping - La chasseuse de bon plan</title>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <nav class="uk-navbar-container" uk-sticky>
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html#apropos" uk-scroll>À propos</a></li>
+                            <li><a href="index.html#processus" uk-scroll>Mon processus</a></li>
+                            <li><a href="index.html#categories" uk-scroll>Mes Catégories</a></li>
+                            <li><a href="index.html#ventes" uk-scroll>Ventes privées</a></li>
+                            <li><a href="index.html#contact" uk-scroll>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <h1 class="logo">TinaShopping.com</h1>
-          </div>
-          <nav class="nav">
-            <a href="#apropos">À propos</a>
-            <a href="#processus">Mon processus</a>
-            <a href="#categories">Mes Catégories</a>
-            <a href="#ventes">Ventes privées</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </div>
-    </header>
+        </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="apropos">
-      <div class="container">
-        <div class="hero-content">
-          <div class="cards-carousel">
-            <div class="cards-container">
-              <div class="card-item active" style="--index: 0">
-                <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
-                  alt="Shopping femme"
-                />
-              </div>
-              <div class="card-item" style="--index: 1">
-                <img
-                  src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=300&fit=crop"
-                  alt="Mode femme"
-                />
-              </div>
-              <div class="card-item" style="--index: 2">
-                <img
-                  src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=300&fit=crop"
-                  alt="Accessoires"
-                />
-              </div>
-              <div class="card-item" style="--index: 3">
-                <img
-                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=400&h=300&fit=crop"
-                  alt="Chaussures"
-                />
-              </div>
-              <div class="card-item" style="--index: 4">
-                <img
-                  src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=300&fit=crop"
-                  alt="Bijoux"
-                />
-              </div>
-            </div>
-            <button class="carousel-btn prev" id="prevBtn">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M15 19l-7-7 7-7"></path>
-              </svg>
-            </button>
-            <button class="carousel-btn next" id="nextBtn">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M9 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </div>
-          <div class="hero-text">
-            <h2>La chasseuse de bon plan</h2>
-            <p>
-              Je suis Tina, et pour vous, j'accompagne les magasins de vêtements
-              et de chaussures et de bijoux à la recherche des bons plans. Et
-              quand c'est ici l'organise les ventes privées pour vous en faire
-              profiter.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="uk-section uk-section-xsmall" id="apropos">
+            <div class="uk-container">
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-1-3@s">
+                        <img src="images/photo_tina.jpg"  class="uk-border-rounded" alt="">
+                    </div>
+                    <div class="uk-width-2-3@s">
+                        <h1>Je suis Tina, fondatrice de TinaShopping.</h1>
+                        <p>Passionnée par la mode féminine, j’ai créé cet espace pour vous proposer des vêtements, chaussures et accessoires élégants à petits prix. Vous trouverez ici un aperçu exclusif de mes collections, soigneusement sélectionnées. Si vous aimez la mode chic à prix doux, vous êtes au bon endroit !</p>
 
-    <!-- Processus Section -->
-    <section class="processus" id="processus">
-      <div class="container">
-        <h2>Mon processus</h2>
-        <div class="processus-cards">
-          <div class="card">
-            <div class="card-icon search">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.35-4.35"></path>
-              </svg>
+                        <p>Rejoignez-moi également pour des ventes privées en direct, organisées deux fois par semaine sur TikTok et via mon groupe WhatsApp.</p>
+                        <p>Mon objectif : vous aider à vous sentir belle et stylée sans dépenser une fortune.</p>
+                    </div>
+                </div>
             </div>
-            <h3>1. Identifier les bons articles</h3>
-            <p>
-              Je déniche les perles rares et les meilleures offres d'articles de
-              qualité.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-icon bag">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M7 4V3a1 1 0 011-1h8a1 1 0 011 1v1h4a2 2 0 012 2v14a2 2 0 01-2 2H3a2 2 0 01-2-2V6a2 2 0 012-2h4zm0 2H3v14h18V6h-4v2h-2V6H9v2H7V6z"
-                />
-              </svg>
-            </div>
-            <h3>2. Collecter et stocker en lieu sûr</h3>
-            <p>
-              Je rassemble ses articles et la cloisé et stockez précieusement
-              pour vous.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-icon organize">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M7 4V3a1 1 0 011-1h8a1 1 0 011 1v1h4a2 2 0 012 2v14a2 2 0 01-2 2H3a2 2 0 01-2-2V6a2 2 0 012-2h4zm0 2H3v14h18V6h-4v2h-2V6H9v2H7V6z"
-                />
-              </svg>
-            </div>
-            <h3>3. Organiser la vente privée</h3>
-            <p>
-              Je mets en place un événement exclusif pour vous présenter mes
-              trouvailles.
-            </p>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Categories Section -->
-    <section class="categories" id="categories">
-      <div class="container">
-        <h2>Mes Catégories</h2>
-        <div class="categories-grid">
-          <div class="category-card">
-            <img
-              src="https://images.unsplash.com/photo-1591047990872-f62c3add3b73?w=300&h=250&fit=crop"
-              alt="Habits Hommes"
-            />
-            <h3>Habits Hommes</h3>
-          </div>
-          <div class="category-card">
-            <img
-              src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=300&h=250&fit=crop"
-              alt="Chaussures Femmes"
-            />
-            <h3>Chaussures Femmes</h3>
-          </div>
-          <div class="category-card">
-            <img
-              src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=300&h=250&fit=crop"
-              alt="Bijoux"
-            />
-            <h3>Bijoux</h3>
-          </div>
-          <div class="category-card">
-            <img
-              src="https://images.unsplash.com/photo-1519689373023-dd07bcc47b1a?w=300&h=250&fit=crop"
-              alt="Habits Enfant"
-            />
-            <h3>Habits Enfant</h3>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="uk-section uk-section-small" id="processus">
+            <div class="uk-container">
+                <div class="uk-text-center">
+                    <h1>Mon process</h1>
+                    <p>Chez TinaShopping, chaque étape compte pour vous offrir la meilleure expérience mode au meilleur prix</p>
+                </div>
 
-    <!-- Ventes Privées Section -->
-    <section class="ventes-privees" id="ventes">
-      <div class="container">
-        <h2>Prochaines ventes privées</h2>
-        <div class="ventes-grid">
-          <div class="vente-card">
-            <h3>Vente Privé d'Automne</h3>
-            <div class="vente-info">
-              <span class="location">📍 Paris Ième</span>
-              <span class="date">📅 15 Octobre 2024</span>
-              <span class="time">⏰ 10:00 - 18:00</span>
+                <div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">Sélection des tendances</h3>
+                            <p>Je repère et sélectionne avec soin les meilleurs articles du moment auprès de mes fournisseurs — des pièces stylées, modernes et de qualité.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">Mise en ligne & partage</h3>
+                            <p>Je publie les nouveautés sur le site ainsi que sur mes statuts et réseaux sociaux, pour que vous soyez toujours au courant des dernières trouvailles.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">Ventes privées exclusives</h3>
+                            <p>Participez à mes lives TikTok et ventes privées WhatsApp, où je vous présente les articles en temps réel et vous fais profiter d’offres spéciales.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">Paiement 100 % sécurisé</h3>
+                            <p>Votre sécurité est ma priorité : chaque transaction est simple, rapide et entièrement sécurisée.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">Livraison avec suivi</h3>
+                            <p>Vos commandes sont expédiées avec numéro de suivi, pour que vous puissiez suivre votre colis jusqu’à votre porte.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">Satisfaite ou remboursée</h3>
+                            <p>Parce que votre confiance compte avant tout, vous bénéficiez d’une garantie “Satisfaite ou remboursée”.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="vente-card">
-            <h3>Vente Privé de Noël</h3>
-            <div class="vente-info">
-              <span class="location">📍 Lyon Centre</span>
-              <span class="date">📅 10 Décembre 2024</span>
-              <span class="time">⏰ 10:00 - 20:00</span>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>Contact & Réseaux Sociaux</h2>
-        <div class="contact-content">
-          <div class="contact-form">
-            <h3>Envoyez-moi un message</h3>
-            <form>
-              <div class="form-group">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn-submit">Envoyer</button>
-            </form>
-          </div>
-          <div class="social-networks">
-            <h3>Retrouvez-moi sur les réseaux</h3>
-            <div class="social-links">
-              <a href="#" class="social-link">Facebook</a>
-              <a href="#" class="social-link">Instagram</a>
-              <a href="#" class="social-link">TikTok</a>
-              <a href="#" class="social-link">LinkedIn</a>
+        <div class="uk-section uk-section-small" id="categories">
+            <div class="uk-container">
+                <div class="uk-text-center">
+                    <h1>Catégories</h1>
+                </div>
+
+                <div class="uk-slider-container-offset" uk-slider="autoplay: true; index: 3">
+
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                        <div class="uk-slider-items uk-child-width-1-3@s uk-grid">
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/ensemble_femme.jpg" width="1800" height="1200" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Vêtements</h3>
+                                        <p>Des tenues tendance et raffinées pour sublimer votre style, du chic décontracté aux looks de soirée.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/chaussure_louboutin_rouge.jpg" width="1800" height="1200" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Chaussures</h3>
+                                        <p>Talons, sandales, baskets ou bottines : trouvez la paire parfaite pour chaque occasion.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/sac_a_main_rouge_tina_shopping.jpg" width="1800" height="1200" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Accessoires</h3>
+                                        <p>Tout ce qu’il faut pour compléter votre look avec une touche de caractère et d’élégance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/ensemble_femme_2.jpg" width="1800" height="1200" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Vêtements</h3>
+                                        <p>Des tenues tendance et raffinées pour sublimer votre style, du chic décontracté aux looks de soirée.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/chaussure_louboutin.jpg" width="1800" height="1200" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Chaussures</h3>
+                                        <p>Talons, sandales, baskets ou bottines : trouvez la paire parfaite pour chaque occasion.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/sac_a_main_tissu_africain_tina_shopping.jpg" width="1800" height="1200" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Accessoires</h3>
+                                        <p>Tout ce qu’il faut pour compléter votre look avec une touche de caractère et d’élégance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+                    </div>
+
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+
+        <div class="uk-section uk-section-small" id="ventes">
+            <div class="uk-container">
+                <div class="uk-text-center">
+                    <h1>Ventes Privées</h1>
+                    <p>Bienvenue dans l’univers exclusif des ventes privées TinaShopping, là où la mode prend vie en direct et où chaque pièce trouve sa future propriétaire !</p>
+                </div>
+
+                <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                    <div>
+                        <h2>En live sur TikTok</h2>
+                        Deux fois par semaine et parfois trois, je vous retrouve en direct sur TikTok pour des sessions shopping uniques :
+                        <ul>
+                            <li>Je présente chaque article un à un à la caméra.</li>
+                            <li>Chaque pièce reçoit un numéro et un prix clair.</li>
+                            <li>Les participantes intéressées manifestent leur intérêt en direct.</li>
+                            <li>La première à choisir est immédiatement annoncée à l’écran : je note son pseudo, elle fait une capture d’écran, puis m’envoie sa sélection </li>
+                            <li>Je place un sticker personnalisé sur l’article réservé et je passe au suivant.</li>
+                        </ul>
+                        À la fin du live, avec mon équipe :
+                        <ul>
+                            <li>Nous regroupons les sélections de chaque cliente.</li>
+                            <li>Nous envoyons les factures directement sur WhatsApp. </li>
+                            <li>Dès réception du paiement sécurisé, la commande est préparée et expédiée — partout dans le monde </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="uk-child-width-1-1" uk-grid>
+                            <div>
+                                <h2> Via WhatsApp</h2>
+                                En dehors des lives, je partage régulièrement des articles exclusifs sur mon groupe et mes statuts WhatsApp et facebook.
+                                <p>Le fonctionnement reste le même : sélection, confirmation, paiement et expédition rapide avec suivi.</p>
+                            </div>
+                            <div>
+                                <h2>Ventes privées au Cameroun</h2>
+                                Une fois par an, en fin d’année, j’organise également des ventes privées sur place au Cameroun — dans un point de vente physique.
+                                C’est l’occasion idéale de découvrir mes articles en détail, d’essayer sur place et même d’acheter en détail ou en gros.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-container uk-container-xsmall uk-text-center">
+            <p class="uk-text-lead">Que ce soit en live, sur WhatsApp ou en présentiel, mes ventes privées sont conçues pour vous offrir une expérience shopping conviviale et transparente.</p>
+        </div>
+
+
+        <div class="uk-section uk-section-small">
+            <div class="uk-container uk-text-center">
+                <div class="hero-content">
+                    <div class="cards-carousel">
+                    <div class="cards-container">
+                        <div class="card-item active" style="--index: 0">
+                        <img
+                            src="images/9c66b919-92fb-441c-9e97-053fe18c1052.jpg"
+                            alt="Shopping femme"
+                        />
+                        </div>
+                        <div class="card-item" style="--index: 1">
+                        <img
+                            src="images/475081125_653909800316749_2222307324220240555_n.jpg"
+                            alt="Mode femme"
+                        />
+                        </div>
+                        <div class="card-item" style="--index: 2">
+                        <img
+                            src="images/475269940_656955053332110_5423150908436793993_n.jpg"
+                            alt="Accessoires"
+                        />
+                        </div>
+                        <div class="card-item" style="--index: 3">
+                        <img
+                            src="images/474624599_653182627042686_133770999685080550_n.jpg"
+                            alt="Chaussures"
+                        />
+                        </div>
+                        <div class="card-item" style="--index: 4">
+                        <img
+                            src="images/475308701_656954993332116_5189044625395343015_n.jpg"
+                            alt="Bijoux"
+                        />
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" id="prevBtn">
+                        <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        >
+                        <path d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next" id="nextBtn">
+                        <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        >
+                        <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
+    <footer class="uk-section uk-section-small">
+      <div class="uk-container uk-text-center">
         <p>&copy; 2024 TinaShopping.com. Tous droits réservés.</p>
       </div>
     </footer>
