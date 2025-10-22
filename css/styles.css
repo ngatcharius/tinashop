@@ -1,3 +1,9 @@
+html {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 19px;
+    font-style: normal;
+}
 
 /* Hero Section */
 .hero {
@@ -163,4 +169,35 @@
   font-size: 16px;
   line-height: 1.8;
   color: #666;
+}
+
+.uk-card-secondary {
+  background-color: #F3933D;
+}
+
+.uk-card-primary {
+  background-color: #000;
+}
+
+.uk-card-overlay {
+  background-color: rgba(255, 255, 255, 0.9);
+  /*color: #666;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);*/
+}
+
+.uk-navbar-nav > li > a {
+    color: #F3933D;
+    text-transform: none;
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#categories {
+    background: #f8f8f8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Caveat", cursive;
+    font-weight: 700;
 }

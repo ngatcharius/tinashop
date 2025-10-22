@@ -4,6 +4,24 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TinaShopping - La chasseuse de bon plan</title>
+        <meta name="description" content="TinaShopping : mode femme chic à prix mini. Vêtements, chaussures et accessoires tendance + ventes privées live TikTok & WhatsApp. Livraison suivie & remboursée" />
+		<link rel="canonical" href="https://tinashopping.com/index.html" />
+
+		<meta property="og:url" content="https://tinashopping.com/index.html">
+		<meta property="og:title" content="TinaShopping - La chasseuse de bon plan">
+		<meta property="og:image" content="https://tinashopping.com/images/tina_white.png">
+		<meta property="og:description" content="TinaShopping : mode femme chic à prix mini. Vêtements, chaussures et accessoires tendance + ventes privées live TikTok & WhatsApp. Livraison suivie & remboursée">
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:url" content="https://tinashopping.com/index.html">
+		<meta name="twitter:title" content="TinaShopping - La chasseuse de bon plan">
+		<meta name="twitter:description" content="TinaShopping : mode femme chic à prix mini. Vêtements, chaussures et accessoires tendance + ventes privées live TikTok & WhatsApp. Livraison suivie & remboursée">
+		<meta name="twitter:image" content="https://tinashopping.com/images/tina_white.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/uikit.min.css" />
         <link rel="stylesheet" href="css/styles.css" />
     </head>
@@ -11,18 +29,41 @@
         <nav class="uk-navbar-container" uk-sticky>
             <div class="uk-container">
                 <div uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">
+                            <img src="images/tina_white.png" width="120px" alt="Logo">
+                        </a>
+                    </div>
                     <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
+                        <ul class="uk-navbar-nav uk-visible@m">
                             <li><a href="index.html#apropos" uk-scroll>À propos</a></li>
                             <li><a href="index.html#processus" uk-scroll>Mon processus</a></li>
                             <li><a href="index.html#categories" uk-scroll>Mes Catégories</a></li>
                             <li><a href="index.html#ventes" uk-scroll>Ventes privées</a></li>
                             <li><a href="index.html#contact" uk-scroll>Contact</a></li>
                         </ul>
+
+                        <a class="uk-navbar-toggle uk-hidden@m " uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href=""></a>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true; mode: push">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <img src="images/tina_white.png" width="150px" alt="Logo">
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="index.html#apropos" uk-scroll>À propos</a></li>
+                    <li><a href="index.html#processus" uk-scroll>Mon processus</a></li>
+                    <li><a href="index.html#categories" uk-scroll>Mes Catégories</a></li>
+                    <li><a href="index.html#ventes" uk-scroll>Ventes privées</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="index.html#contact" uk-scroll>Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
 
         <div class="uk-section uk-section-xsmall" id="apropos">
             <div class="uk-container">
@@ -30,12 +71,12 @@
                     <div class="uk-width-1-3@s">
                         <img src="images/photo_tina.jpg"  class="uk-border-rounded" alt="">
                     </div>
-                    <div class="uk-width-2-3@s">
+                    <div class="uk-width-2-3@s uk-text-justify">
                         <h1>Je suis Tina, fondatrice de TinaShopping.</h1>
-                        <p>Passionnée par la mode féminine, j’ai créé cet espace pour vous proposer des vêtements, chaussures et accessoires élégants à petits prix. Vous trouverez ici un aperçu exclusif de mes collections, soigneusement sélectionnées. Si vous aimez la mode chic à prix doux, vous êtes au bon endroit !</p>
+                        <p>Passionnée par la <b>mode féminine</b>, j’ai créé cet espace pour vous proposer des <b>vêtements, chaussures et accessoires élégants</b> à petits prix. Vous trouverez ici un aperçu exclusif de mes collections, soigneusement sélectionnées. Si vous aimez la mode chic à prix doux, vous êtes au bon endroit !</p>
 
-                        <p>Rejoignez-moi également pour des ventes privées en direct, organisées deux fois par semaine sur TikTok et via mon groupe WhatsApp.</p>
-                        <p>Mon objectif : vous aider à vous sentir belle et stylée sans dépenser une fortune.</p>
+                        <p>Rejoignez-moi également pour des ventes privées en direct, organisées deux fois par semaine sur <b>TikTok</b> et via mon <b>groupe WhatsApp</b>.</p>
+                        <p><b>Mon objectif :</b> vous aider à vous sentir belle et stylée sans dépenser une fortune.</p>
                     </div>
                 </div>
             </div>
@@ -50,37 +91,43 @@
 
                 <div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-match" uk-grid>
                     <div>
-                        <div class="uk-card uk-card-secondary uk-card-body">
+                        <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-rounded">
+                            <div class="uk-h1">01</div>
                             <h3 class="uk-card-title">Sélection des tendances</h3>
                             <p>Je repère et sélectionne avec soin les meilleurs articles du moment auprès de mes fournisseurs — des pièces stylées, modernes et de qualité.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-secondary uk-card-body">
+                        <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-rounded">
+                            <div class="uk-h1">02</div>
                             <h3 class="uk-card-title">Mise en ligne & partage</h3>
                             <p>Je publie les nouveautés sur le site ainsi que sur mes statuts et réseaux sociaux, pour que vous soyez toujours au courant des dernières trouvailles.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-secondary uk-card-body">
+                        <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-rounded">
+                            <div class="uk-h1">03</div>
                             <h3 class="uk-card-title">Ventes privées exclusives</h3>
                             <p>Participez à mes lives TikTok et ventes privées WhatsApp, où je vous présente les articles en temps réel et vous fais profiter d’offres spéciales.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-secondary uk-card-body">
+                        <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-rounded">
+                            <div class="uk-h1">04</div>
                             <h3 class="uk-card-title">Paiement 100 % sécurisé</h3>
                             <p>Votre sécurité est ma priorité : chaque transaction est simple, rapide et entièrement sécurisée.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-secondary uk-card-body">
+                        <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-rounded">
+                            <div class="uk-h1">05</div>
                             <h3 class="uk-card-title">Livraison avec suivi</h3>
                             <p>Vos commandes sont expédiées avec numéro de suivi, pour que vous puissiez suivre votre colis jusqu’à votre porte.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-secondary uk-card-body">
+                        <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-rounded">
+                            <div class="uk-h1">06</div>
                             <h3 class="uk-card-title">Satisfaite ou remboursée</h3>
                             <p>Parce que votre confiance compte avant tout, vous bénéficiez d’une garantie “Satisfaite ou remboursée”.</p>
                         </div>
@@ -179,52 +226,53 @@
             </div>
         </div>
 
-        <div class="uk-section uk-section-small" id="ventes">
+        <div class="uk-section uk-section-small" style="background-image: url(images/fond.jpg);" id="ventes">
             <div class="uk-container">
-                <div class="uk-text-center">
-                    <h1>Ventes Privées</h1>
-                    <p>Bienvenue dans l’univers exclusif des ventes privées TinaShopping, là où la mode prend vie en direct et où chaque pièce trouve sa future propriétaire !</p>
-                </div>
-
-                <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
-                    <div>
-                        <h2>En live sur TikTok</h2>
-                        Deux fois par semaine et parfois trois, je vous retrouve en direct sur TikTok pour des sessions shopping uniques :
-                        <ul>
-                            <li>Je présente chaque article un à un à la caméra.</li>
-                            <li>Chaque pièce reçoit un numéro et un prix clair.</li>
-                            <li>Les participantes intéressées manifestent leur intérêt en direct.</li>
-                            <li>La première à choisir est immédiatement annoncée à l’écran : je note son pseudo, elle fait une capture d’écran, puis m’envoie sa sélection </li>
-                            <li>Je place un sticker personnalisé sur l’article réservé et je passe au suivant.</li>
-                        </ul>
-                        À la fin du live, avec mon équipe :
-                        <ul>
-                            <li>Nous regroupons les sélections de chaque cliente.</li>
-                            <li>Nous envoyons les factures directement sur WhatsApp. </li>
-                            <li>Dès réception du paiement sécurisé, la commande est préparée et expédiée — partout dans le monde </li>
-                        </ul>
+                <div class="uk-card uk-card-overlay uk-card-body">
+                    <div class="uk-text-center">
+                        <h1>Ventes Privées</h1>
+                        <p>Bienvenue dans l’univers exclusif des ventes privées TinaShopping, là où la mode prend vie en direct et où chaque pièce trouve sa future propriétaire !</p>
                     </div>
-                    <div>
-                        <div class="uk-child-width-1-1" uk-grid>
-                            <div>
-                                <h2> Via WhatsApp</h2>
-                                En dehors des lives, je partage régulièrement des articles exclusifs sur mon groupe et mes statuts WhatsApp et facebook.
-                                <p>Le fonctionnement reste le même : sélection, confirmation, paiement et expédition rapide avec suivi.</p>
-                            </div>
-                            <div>
-                                <h2>Ventes privées au Cameroun</h2>
-                                Une fois par an, en fin d’année, j’organise également des ventes privées sur place au Cameroun — dans un point de vente physique.
-                                C’est l’occasion idéale de découvrir mes articles en détail, d’essayer sur place et même d’acheter en détail ou en gros.
+                    <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                        <div>
+                            <h2>En live sur TikTok</h2>
+                            Deux fois par semaine et parfois trois, je vous retrouve en direct sur TikTok pour des sessions shopping uniques :
+                            <ul>
+                                <li>Je présente chaque article un à un à la caméra.</li>
+                                <li>Chaque pièce reçoit un numéro et un prix clair.</li>
+                                <li>Les participantes intéressées manifestent leur intérêt en direct.</li>
+                                <li>La première à choisir est immédiatement annoncée à l’écran : je note son pseudo, elle fait une capture d’écran, puis m’envoie sa sélection </li>
+                                <li>Je place un sticker personnalisé sur l’article réservé et je passe au suivant.</li>
+                            </ul>
+                            À la fin du live, avec mon équipe :
+                            <ul>
+                                <li>Nous regroupons les sélections de chaque cliente.</li>
+                                <li>Nous envoyons les factures directement sur WhatsApp. </li>
+                                <li>Dès réception du paiement sécurisé, la commande est préparée et expédiée — partout dans le monde </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="uk-child-width-1-1" uk-grid>
+                                <div>
+                                    <h2> Via WhatsApp</h2>
+                                    En dehors des lives, je partage régulièrement des articles exclusifs sur mon groupe et mes statuts WhatsApp et facebook.
+                                    <p>Le fonctionnement reste le même : sélection, confirmation, paiement et expédition rapide avec suivi.</p>
+                                </div>
+                                <div>
+                                    <h2>Ventes privées au Cameroun</h2>
+                                    Une fois par an, en fin d’année, j’organise également des ventes privées sur place au Cameroun — dans un point de vente physique.
+                                    C’est l’occasion idéale de découvrir mes articles en détail, d’essayer sur place et même d’acheter en détail ou en gros.
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="uk-container uk-container-xsmall uk-text-center">
+                        <p class="uk-text-lead">Que ce soit en live, sur WhatsApp ou en présentiel, mes ventes privées sont conçues pour vous offrir une expérience shopping conviviale et transparente.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="uk-container uk-container-xsmall uk-text-center">
-            <p class="uk-text-lead">Que ce soit en live, sur WhatsApp ou en présentiel, mes ventes privées sont conçues pour vous offrir une expérience shopping conviviale et transparente.</p>
-        </div>
-
 
         <div class="uk-section uk-section-small">
             <div class="uk-container uk-text-center">
@@ -287,15 +335,34 @@
             </div>
         </div>
 
-    <!-- Footer -->
-    <footer class="uk-section uk-section-small">
-      <div class="uk-container uk-text-center">
-        <p>&copy; 2024 TinaShopping.com. Tous droits réservés.</p>
-      </div>
-    </footer>
+        <div class="uk-section uk-card-primary" id="contact">
+            <div class="uk-container">
+                <div class="uk-text-center">
+                    <h1>Contact</h1>
+                </div>
+                <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-grid-divider uk-grid-match uk-flex-middle" uk-grid>
+                    <div>Email : <br>contact@tinashopping.com</div>
+                    <div>Tel+Whatsapp : +32 0479 02 79 71 <br>+32 484 79 76 51</div>
+                    <div>
+                        <div>
+                            <a target="_blank" href="https://www.tiktok.com/@ttiinnaa7" class="uk-icon-button uk-margin-small-right" uk-icon="tiktok"></a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100070932031622" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                            <a target="_blank" href="" class="uk-icon-button" uk-icon="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-    <script src="js/carousel.js"></script>
-  </body>
+        <!-- Footer -->
+        <footer class="uk-section uk-section-small uk-card-primary">
+            <div class="uk-container uk-text-center">
+                <p>&copy; 2024 TinaShopping.com. Tous droits réservés.</p>
+            </div>
+        </footer>
+
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="js/carousel.js"></script>
+    </body>
 </html>
