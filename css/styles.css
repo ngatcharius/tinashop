@@ -201,3 +201,53 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Caveat", cursive;
     font-weight: 700;
 }
+
+/* ===== Slider : agrandir l'élément central ===== */
+#slideimage .uk-slider-items > div .uk-panel {
+  transition: transform 0.35s cubic-bezier(0.2,0.8,0.2,1), opacity 0.35s;
+  transform-origin: center center;
+  /* image par défaut un peu réduite */
+  --default-scale: 0.78;
+  transform: scale(var(--default-scale));
+  opacity: 0.85;
+}
+
+/* état central (le JS ajoute la classe .is-center sur le slide) */
+#slideimage .uk-slider-items > div.is-center .uk-panel {
+  --center-scale: 1;
+  transform: scale(var(--center-scale));
+  opacity: 1;
+  z-index: 5;
+}
+
+/* état proche (juste à côté du centre) */
+#slideimage .uk-slider-items > div.is-near .uk-panel {
+  --near-scale: 0.9;
+  transform: scale(var(--near-scale));
+  opacity: 0.95;
+  z-index: 4;
+}
+
+/* état éloigné */
+#slideimage .uk-slider-items > div.is-far .uk-panel {
+  --far-scale: 0.65;
+  transform: scale(var(--far-scale));
+  opacity: 0.6;
+  z-index: 2;
+}
+
+/* image responsive styling */
+#slideimage .uk-slider-items img {
+  width: 100%;
+  height: 400px; /* ajuste si nécessaire */
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/* variante pour très petits écrans si besoin */
+@media (max-width: 640px) {
+  #slideimage .uk-slider-items img {
+    height: 160px;
+  }
+}
